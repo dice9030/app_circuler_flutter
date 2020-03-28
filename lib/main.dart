@@ -1,5 +1,6 @@
 import 'package:app_circule_chart/src/page/graficas_circulares_page.dart';
 import 'package:app_circule_chart/src/page/home_page.dart';
+import 'package:app_circule_chart/src/page/pinteres_page.dart';
 import 'package:app_circule_chart/src/page/slidershow_page.dart';
 
 // import 'package:app_circule_chart/src/widget/circular_progress.dart';
@@ -12,12 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material App',
-      initialRoute: 'SlidesShow',
+      initialRoute: 'Pinteres',
       routes: {
         'Home' : (BuildContext context) => HomePage(),
         'Progrees' : (BuildContext context) => GraficasCircularesPage(),
         'SlidesShow' : (BuildContext context) => SliderShowPage(),
-    
+        'Pinteres': (BuildContext context) => PinteresPage(),
 
       },
     );
